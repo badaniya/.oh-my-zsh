@@ -27,6 +27,6 @@ export DOCKER_BUILDKIT=1
 export KUBECONFIG=~/.kube/config
 
 ## Other Environment Settings ##
-if [[ -f $HOME/.bash_profile_private ]]; then
-    source $HOME/.bash_profile_private
+if [[ -f $HOME/.private_bash_profile ]]; then
+    source $HOME/.private_bash_profile
 fi

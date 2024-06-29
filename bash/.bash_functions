@@ -5,8 +5,8 @@ SWITCH_TERMINAL_GEOMETRY="89x25"
 CHASSIS_TERMINAL_GEOMETRY="180x25"
 FULL_TERMINAL_GEOMETRY="180x56"
 
-if [[ -f $HOME/.bash_functions_private ]]; then
-    source $HOME/.bash_functions_private
+if [[ -f $HOME/.private_bash_functions ]]; then
+    source $HOME/.private_bash_functions
 fi
 
 host_ip()

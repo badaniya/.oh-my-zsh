@@ -6,8 +6,8 @@ elif [[ "$SHELL" =~ zsh && -f $HOME/.zsh_functions ]]; then
 fi 
 
 # Source Other Aliases
-if [[ -f $HOME/.bash_aliases_private ]]; then
-    source $HOME/.bash_aliases_private
+if [[ -f $HOME/.private_bash_aliases ]]; then
+    source $HOME/.private_bash_aliases
 fi
 
 # System Aliases

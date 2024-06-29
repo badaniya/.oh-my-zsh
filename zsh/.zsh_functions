@@ -24,8 +24,8 @@ if [[ -f "$HOME/.cwd" ]]; then
     cd "$(<$HOME/.cwd)"
 fi
 
-if [[ -f $HOME/.zsh_functions_private ]]; then
-    source $HOME/.zsh_functions_private
+if [[ -f $HOME/.private_zsh_functions ]]; then
+    source $HOME/.private_zsh_functions
 fi
 
 host_ip()
