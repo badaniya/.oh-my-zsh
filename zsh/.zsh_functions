@@ -17,13 +17,6 @@ SWITCH_TERMINAL_GEOMETRY="89x25"
 CHASSIS_TERMINAL_GEOMETRY="180x25"
 FULL_TERMINAL_GEOMETRY="180x56"
 
-PROMPT_COMMAND='pwd > "$HOME/.cwd"'
-
-# open new terminal in the same dir excluding when zsh is running under tmx
-if [[ -f "$HOME/.cwd" && ! -v TMUX ]]; then 
-    cd "$(<$HOME/.cwd)"
-fi
-
 if [[ -f $HOME/.private_zsh_functions ]]; then
     source $HOME/.private_zsh_functions
 fi
