@@ -19,8 +19,8 @@ FULL_TERMINAL_GEOMETRY="180x56"
 
 PROMPT_COMMAND='pwd > "$HOME/.cwd"'
 
-# open new terminal in same dir
-if [[ -f "$HOME/.cwd" ]]; then 
+# open new terminal in the same dir excluding when zsh is running under tmx
+if [[ -f "$HOME/.cwd" && ! -v TMUX ]]; then 
     cd "$(<$HOME/.cwd)"
 fi
 
