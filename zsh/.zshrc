@@ -76,7 +76,6 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zsh-cwd
     last-working-dir-tmux
     urltools
 )

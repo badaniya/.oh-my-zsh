@@ -11,14 +11,12 @@ git remote add catppuccin https://github.com/catppuccin/tmux
 git remote add vim-tmux-navigator https://github.com/christoomey/vim-tmux-navigator
 git remote add tmux-resurrect https://github.com/tmux-plugins/tmux-resurrect
 git remote add tmux-continuum https://github.com/tmux-plugins/tmux-continuum
-git remote add last-working-dir-tmux https://github.com/badaniya/last-working-dir-tmux
 git subtree add --prefix=tmux/.tmux/plugins/tpm tpm master --squash
 git subtree add --prefix=tmux/.tmux/plugins/tmux-sensible master --squash
 git subtree add --prefix=tmux/.tmux/plugins/tmux catppuccin main --squash
 git subtree add --prefix=tmux/.tmux/plugins/vim-tmux-navigator vim-tmux-navigator master --squash
 git subtree add --prefix=tmux/.tmux/plugins/tmux-resurrect tmux-resurrect master --squash
 git subtree add --prefix=tmux/.tmux/plugins/tmux-continuum tmux-continuum master --squash
-git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/last-working-dir-tmux last-working-dir-tmux master --squash
 ```
 
 ### 2) zsh
@@ -31,10 +29,10 @@ git subtree add --prefix=zsh/.oh-my-zsh oh-my-zsh master
 # ZSH Plugins
 git remote add zsh-sytax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting
 git remote add zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
-git remote add zsh-cwd https://github.com/pjvds/zsh-cwd
+git remote add last-working-dir-tmux https://github.com/badaniya/last-working-dir-tmux
 git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-sytax-highlighting master --squash
 git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions zsh-autosuggestions master --squash
-git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-cwd zsh-cwd master --squash
+git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/last-working-dir-tmux last-working-dir-tmux master --squash
 ```
 
 ### 3) nvim
