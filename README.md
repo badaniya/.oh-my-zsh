@@ -38,7 +38,7 @@ cd $HOME/.stowed
 git reset --hard HEAD
 
 # Sure-file Way to Ensure Stow Symlink Creation (NOTE: Ensure the GNU Stow succeeds before quitting the shell) 
-rm -rf $HOME/.bash*; rm -rf $HOME/.zsh*; rm -rf $HOME/.oh-my-zsh; rm -rf $HOME/.config/nvim; rm -rf $HOME/.vim*; rm -rf $HOME/.emacs*; stow -d $HOME/.stowed bash zsh nvim vim emacs
+rm -rf $HOME/.bash*; rm -rf $HOME/.zsh*; rm -rf $HOME/.oh-my-zsh; rm -rf $HOME/.config/nvim; rm -rf $HOME/.vim*; rm -rf $HOME/.emacs*; stow -d $HOME/.stowed tmux bash zsh nvim vim emacs
 ```
 
 ## Follow-up Package Installation for Shell/Editor Tools
@@ -122,7 +122,7 @@ go install gotest.tools/gotestsum@latest
 ## How to Use These Stowed Shell/Editor Tools
 ```console
 # 1) Start a new tmux session
-tmux [new -s <session-name> -c <start-directory>]
+tmux [new -s <session-name> [-c <start-directory>]]
 
 # 2) Start nvim from within tmux to maintain session persistence across remote shell logins
 nvim
@@ -139,8 +139,11 @@ tmux detach
 # 3) Attach to a tmux session
 tmux attach -t <# | session-name>
 
-# 4) Delete all tmux sessions
-tmux kill-session
+# 4) Delete a tmux session
+tmux kill-session -t <# | session-name>
+
+# 5) Delete all tmux sessions
+tmux kill-server
 ```
 
 ## Tmux Key Bindings
@@ -159,6 +162,9 @@ tmux kill-session
 <C-j> : Move to the pane below
 <C-k> : Move to the pane above
 <C-l> : Move to the pane on the right
+
+# Tmux Sessions Switching
+<C-b> s : Displays a tmux sessions menu to switch between tmux sessions
 
 # Newer Tmux 3.2 Copy/Paste
 <left-mouse-click> : copy
