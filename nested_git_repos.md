@@ -62,3 +62,10 @@ git subtree add --prefix=vim/.vim/plugged/vim-fugitive vim-fugitive master --squ
 git subtree add --prefix=vim/.vim/plugged/vim-go vim-go master --squash
 git subtree add --prefix=vim/.vim/plugged/vim-gitgutter vim-gitgutter main --squash
 ```
+
+### 5) fzf
+```console
+cd $HOME/.stowed
+git remote add fzf https://github.com/junegunn/fzf.git
+git subtree add --prefix=fzf/.fzf fzf master --squash
+```
