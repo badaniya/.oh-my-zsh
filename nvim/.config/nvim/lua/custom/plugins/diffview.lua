@@ -2,7 +2,7 @@ return {
   'sindrets/diffview.nvim',
   config = function()
     require('diffview').setup {
-      vim.opt.fillchars:append { diff = '╱' },
+      vim.opt.fillchars:append { diff = ' ' },
     }
 
     -- upstream_branch_name - uses a git command to return the upstream branches name
