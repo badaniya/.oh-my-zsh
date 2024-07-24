@@ -16,5 +16,5 @@ return {
 
   vim.cmd "let test#strategy = 'vimux'",
   vim.cmd "let test#go#runner = 'gotest'",
-  vim.cmd "let test#go#gotest#options = '-v -timeout 0 -count 1'", -- -v: verbose, -timeout 0: infinite timeout, -count 1: non-cached run always
+  vim.cmd "let test#go#gotest#options = '-v -timeout 0 -count 1 -tags ci_jenkins'", -- -v: verbose, -timeout 0: infinite timeout, -count 1: non-cached run always, -tags ci_jenkins: run against CI setup.
 }

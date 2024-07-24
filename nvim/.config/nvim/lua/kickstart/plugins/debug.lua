@@ -95,7 +95,7 @@ return {
         -- See https://github.com/leoluz/nvim-dap-go/blob/main/README.md#configuring
         detached = vim.fn.has 'win32' == 0,
         --args = {},
-        --build_flags = '',
+        build_flags = '-tags=ci_jenkins',
         --cwd = nil,
       },
     }
