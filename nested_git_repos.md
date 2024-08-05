@@ -26,6 +26,9 @@ cd $HOME/.stowed
 git remote add oh-my-zsh https://github.com/badaniya/.oh-my-zsh
 git subtree add --prefix=zsh/.oh-my-zsh oh-my-zsh master
 
+# How to Pull in Oh My ZSH Updates
+git pull -s subtree oh-my-zsh master --allow-unrelated-histories
+
 # ZSH Plugins
 git remote add zsh-sytax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting
 git remote add zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
