@@ -15,6 +15,9 @@ alias freebuffcache="sudo bash -c 'echo 3 > /proc/sys/vm/drop_caches'"
 alias runmemlimit="systemd-run --user --scope --property=MemoryHigh=1G "
 alias iosched="sudo bash -c 'echo bfq > /sys/block/sda/queue/scheduler'; cat /sys/block/sda/queue/scheduler"
 
+# Linux Aliases
+alias fzfbat="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+
 # Go Aliases
 alias gomodtidy="find . -type f ! -path '*/pkg/*' -name go.mod -execdir pwd \; -execdir go mod tidy -go=1.20 \;"
 alias gomodtidycompat="find . -type f ! -path '*/pkg/*' -name go.mod -execdir pwd \; -execdir go mod tidy -compat=1.19 \;"
