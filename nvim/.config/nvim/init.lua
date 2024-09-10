@@ -81,7 +81,11 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagn
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
--- Set terminal mapping
+-- Quickview keymaps
+vim.keymap.set('n', '[q', ':cprev <CR>', { desc = 'Go to previous [Q]uickfix list entry' })
+vim.keymap.set('n', ']q', ':cnext <CR>', { desc = 'Go to next [Q]uickfix list entry' })
+
+-- Set terminal mappingq
 vim.keymap.set('n', '<leader>z', ':split | set nonumber | set norelativenumber | resize 20 | terminal <CR> i', { desc = 'Open [Z]SH terminal' })
 vim.keymap.set('n', '<leader>v', ':vsplit | set nonumber | set norelativenumber | terminal <CR> i', { desc = 'Open ZSH terminal [V]ertically' })
 
