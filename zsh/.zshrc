@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
+#ZSH_THEME="bullet-train"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -17,8 +17,8 @@ ZSH_THEME="bullet-train"
 # ZSH_THEME_RANDOM_CANDIDATES=( "bira" "agnoster" "bullet-train" )
 
 # BULLET-TRAIN Theme Settings
-BULLETTRAIN_DIR_EXTENDED=2
-BULLETTRAIN_TIME_12HR=true
+#BULLETTRAIN_DIR_EXTENDED=2
+#BULLETTRAIN_TIME_12HR=true
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,6 +85,7 @@ source $ZSH/custom/plugins/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-s
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export ZVM_VI_EDITOR=nvim
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
