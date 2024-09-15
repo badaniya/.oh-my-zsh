@@ -165,6 +165,9 @@ tmux kill-server
 <C-b> q : Displays tmux pane numbers
 <C-b> # : Switch to the tmux window number
 
+# Tmux Pane Zoom-in/Zoom-out
+<C-b> z : Toggles the current pane to zoom-in or zoom-out
+
 # Tmux Pane Switching
 <C-h> : Move to the pane on the left
 <C-j> : Move to the pane below
