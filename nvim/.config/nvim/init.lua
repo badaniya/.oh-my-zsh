@@ -799,7 +799,7 @@ require('lazy').setup({
       },
     },
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'go' },
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'go', 'yaml', 'toml', 'sql' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
