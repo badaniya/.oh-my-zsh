@@ -14,9 +14,12 @@ format = "$directory$fill$all"
 # Starship modules
 [character]
 # Note the use of Catppuccin color 'peach'
-success_symbol = "[[󰄛](green) ❯](peach)"
-error_symbol = "[[󰄛](red) ❯](peach)"
-vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
+#success_symbol = "[[󰄛](green) ❯](peach)"
+#error_symbol = "[[󰄛](red) ❯](peach)"
+#vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
+success_symbol = "[[{¬_¬}✌](green) ❯](peach)"
+error_symbol = "[[{⌣̀᷼ ⌣́}✊](red) ❯](peach)"
+vimcmd_symbol = "[{◕‿◕}✋ ❮](subtext1)" # For use with zsh-vi-mode
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)](bold mauve) '
