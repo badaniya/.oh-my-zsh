@@ -1,4 +1,4 @@
-export EDITOR=vim
+export EDITOR=nvim
 #export LC_ALL="en_US.UTF-8"
 #export LC_ALL="C"
 export VAGRANT_HOME=$HOME/.vagrant.d

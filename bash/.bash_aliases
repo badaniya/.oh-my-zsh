@@ -17,7 +17,7 @@ alias iosched="sudo bash -c 'echo bfq > /sys/block/sda/queue/scheduler'; cat /sy
 
 # Linux Aliases
 alias fzfbat="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
-alias lz="eza --icons"
+alias le="eza --icons"
 
 # Go Aliases
 alias gomodtidy="find . -type f ! -path '*/pkg/*' -name go.mod -execdir pwd \; -execdir go mod tidy -go=1.20 \;"
