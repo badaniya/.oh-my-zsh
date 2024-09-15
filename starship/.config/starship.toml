@@ -18,8 +18,8 @@ format = "$directory$fill$all"
 #error_symbol = "[[󰄛](red) ❯](peach)"
 #vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
 success_symbol = "[[{¬_¬}✌](green) ❯](peach)"
-error_symbol = "[[{⌣̀᷼ ⌣́}✊](red) ❯](peach)"
-vimcmd_symbol = "[{◕‿◕}✋ ❮](subtext1)" # For use with zsh-vi-mode
+error_symbol = "[[{⌣̀᷼ ⌣́}✊](red)❯](peach)"
+vimcmd_symbol = "[{◕‿◕}✋❮](subtext1)" # For use with zsh-vi-mode
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)](bold mauve) '
