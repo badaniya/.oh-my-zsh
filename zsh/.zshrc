@@ -66,6 +66,7 @@ BULLETTRAIN_TIME_12HR=true
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
+source $ZSH/custom/plugins/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -76,6 +77,7 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zsh-vim-mode
     last-working-dir-tmux
     urltools
 )

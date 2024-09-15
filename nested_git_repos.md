@@ -33,9 +33,11 @@ git pull -s subtree oh-my-zsh master --allow-unrelated-histories
 git remote add zsh-sytax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting
 git remote add zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
 git remote add last-working-dir-tmux https://github.com/badaniya/last-working-dir-tmux
+git remote add zsh-vim-mode https://github.com/softmoth/zsh-vim-mode
 git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-sytax-highlighting master --squash
 git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions zsh-autosuggestions master --squash
 git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/last-working-dir-tmux last-working-dir-tmux master --squash
+git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-vim-mode zsh-vim-mode main --squash
 ```
 
 ### 3) nvim
