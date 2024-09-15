@@ -6,6 +6,7 @@ This repository is used to store all dot-config files for various shells and edi
 **Stowed Terminal Tools:**
 - tmux
 - fzf
+- starship
 
 **Stowed Shells:**
 - bash
@@ -31,15 +32,15 @@ git clone https://github.com/badaniya/.stowed $HOME/.stowed
 ### 3) Run Stow Command to Establish Symlinks to the Repository
 ```console
 # Create Symlinks to Repo
-stow -d $HOME/.stowed tmux fzf bash zsh nvim vim emacs
+stow -d $HOME/.stowed tmux fzf starship bash zsh nvim vim emacs
 
 # To Force Symlink Creation (NOTE: May miss some hidden files or symlinks)
-stow -d $HOME/.stowed --adopt tmux fzf bash zsh nvim vim emacs
+stow -d $HOME/.stowed --adopt tmux fzf starship bash zsh nvim vim emacs
 cd $HOME/.stowed
 git reset --hard HEAD
 
 # Sure-file Way to Ensure Stow Symlink Creation (NOTE: Ensure the GNU Stow succeeds before quitting the shell) 
-rm -rf $HOME/.bash*; rm -rf $HOME/.zsh*; rm -rf $HOME/.oh-my-zsh; rm -rf $HOME/.config/nvim; rm -rf $HOME/.vim*; rm -rf $HOME/.emacs*; stow -d $HOME/.stowed tmux fzf bash zsh nvim vim emacs
+rm -rf $HOME/.bash*; rm -rf $HOME/.zsh*; rm -rf $HOME/.oh-my-zsh; rm -rf $HOME/.config/nvim; rm -rf $HOME/.vim*; rm -rf $HOME/.emacs*; stow -d $HOME/.stowed tmux fzf starship bash zsh nvim vim emacs
 ```
 
 ## Follow-up Package Installation for Shell/Editor Tools
@@ -58,7 +59,13 @@ sudo apt install -y zsh
 sudo apt install fonts-powerline
 ```
 
-### 3) Neovim
+### 3) Starship
+```console
+# starship: Shell script installer
+curl -sS https://starship.rs/install.sh | sh
+```
+
+### 4) Neovim
 ```console
 # neovim: Latest version
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
@@ -74,7 +81,7 @@ unzip -od ~/.local/share/fonts/ JetBrainsMono.zip
 fc-cache -fv
 ```
 
-### 3.1) Neovim Plugin Dependencies
+### 4.1) Neovim Plugin Dependencies
 #### Database UI Plugin
 ```console
 # DB UI - postgres/mysql (vim-dadbod and vim-dadbod-ui)
@@ -82,12 +89,12 @@ sudo apt install -y postgresql-client
 sudo apt install -y mariadb-client 
 ```
 
-### 4) Vim
+### 5) Vim
 ```console
 sudo apt install -y vim
 ```
 
-### 5) Emacs
+### 6) Emacs
 ```console
 sudo apt-add-repository -y ppa:kelleyk/emacs
 sudo apt update -y
