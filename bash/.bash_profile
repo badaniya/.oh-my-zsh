@@ -18,7 +18,7 @@ if [[ ! "$PATH" =~ "$GOBASEPATH/bin" ]]; then
     export PATH=$GOBASEPATH/bin:$PATH
 fi
 
-export PATH=$PATH:$HOME/.local/bin:/opt/nvim-linux64/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin:/opt/nvim-linux64/bin
 
 ## Docker Environment Settings ##
 export DOCKER_BUILDKIT=1
@@ -30,3 +30,4 @@ export KUBECONFIG=~/.kube/config
 if [[ -f $HOME/.private_bash_profile ]]; then
     source $HOME/.private_bash_profile
 fi
+. "$HOME/.cargo/env"
