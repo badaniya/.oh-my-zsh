@@ -14,9 +14,9 @@ git remote add tmux-resurrect https://github.com/tmux-plugins/tmux-resurrect
 git remote add tmux-continuum https://github.com/tmux-plugins/tmux-continuum
 git remote add catppuccin https://github.com/catppuccin/tmux
 git subtree add --prefix=tmux/.tmux/plugins/tpm tpm master --squash
-git subtree add --prefix=tmux/.tmux/plugins/tmux-sensible master --squash
-git subtree add --prefix=tmux/.tmux/plugins/tmux-yank master --squash
-git subtree add --prefix=tmux/.tmux/plugins/tmux-copycat master --squash
+git subtree add --prefix=tmux/.tmux/plugins/tmux-sensible tmux-sensible master --squash
+git subtree add --prefix=tmux/.tmux/plugins/tmux-yank tmux-yank master --squash
+git subtree add --prefix=tmux/.tmux/plugins/tmux-copycat tmux-copycat master --squash
 git subtree add --prefix=tmux/.tmux/plugins/vim-tmux-navigator vim-tmux-navigator master --squash
 git subtree add --prefix=tmux/.tmux/plugins/tmux-resurrect tmux-resurrect master --squash
 git subtree add --prefix=tmux/.tmux/plugins/tmux-continuum tmux-continuum master --squash
