@@ -6,7 +6,7 @@
 palette = "catppuccin_mocha"
 
 # Inserts a blank line between shell prompts
-add_newline = false
+add_newline = true
 
 # Sets the prompt format
 format = "$directory$fill$all"
