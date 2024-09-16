@@ -6,9 +6,9 @@
 # TPM - TMUX Plugin Manager
 cd $HOME/.stowed
 git remote add tpm https://github.com/tmux-plugins/tpm
-git remote add tpm-sensible https://github.com/tmux-plugins/tmux-sensible
-git remote add tpm-yank https://github.com/tmux-plugins/tmux-yank
-git remote add tpm-copycat https://github.com/tmux-plugins/tmux-copycat
+git remote add tmux-sensible https://github.com/tmux-plugins/tmux-sensible
+git remote add tmux-yank https://github.com/tmux-plugins/tmux-yank
+git remote add tmux-copycat https://github.com/tmux-plugins/tmux-copycat
 git remote add vim-tmux-navigator https://github.com/christoomey/vim-tmux-navigator
 git remote add tmux-resurrect https://github.com/tmux-plugins/tmux-resurrect
 git remote add tmux-continuum https://github.com/tmux-plugins/tmux-continuum
