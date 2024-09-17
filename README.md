@@ -165,25 +165,36 @@ tmux kill-server
 <C-b> q : Displays tmux pane numbers
 <C-b> # : Switch to the tmux window number
 
-# Tmux Pane Zoom-in/Zoom-out
-<C-b> z : Toggles the current pane to zoom-in or zoom-out
+# Tmux Sessions Switching
+<C-b> s : Displays a tmux sessions menu to switch between tmux sessions
 
 # Tmux Pane Switching
 <C-h> : Move to the pane on the left
 <C-j> : Move to the pane below
 <C-k> : Move to the pane above
 <C-l> : Move to the pane on the right
+<C-b> q # : Selects the pane number to switch to
 
-# Tmux Sessions Switching
-<C-b> s : Displays a tmux sessions menu to switch between tmux sessions
+# Tmux Pane Zoom-in/Zoom-out
+<C-b> z : Toggles the current pane to zoom-in or zoom-out
 
-# Newer Tmux 3.2 Copy/Paste
+# Tmux Pan Resizing (keyboard)
+<C-b> <C-arrow-keys> : Fine grained resizing
+<C-b> <M-arrow-keys> : Coarse grained resizing
+
+# Newer Tmux 3.2 Copy/Paste (mouse)
 <left-mouse-click> : copy
 <middle-mouse-click> : paste
 
-# Older Tmux 3.0a Copy/Paste
+# Older Tmux 3.0a Copy/Paste (mouse)
 <C-S-left-mouse-click> : copy
 <C-S-middle-mouse-click> : paste 
+
+# Tmux Copy/Paste vi-copy-mode (keyboard)
+<C-b> [ : Enters copy-mode
+<space> : Starts the selection (use vi motions to expand the selection)
+<enter> : Stores the selection
+<C-b> ] : Pastes the selection
 ```
 
 ## Nvim Key Bindings
