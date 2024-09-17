@@ -23,7 +23,7 @@ format = "$directory$fill$all"
 #success_symbol = "[[󰄛](green) ❯](peach)"
 #error_symbol = "[[󰄛](red) ❯](peach)"
 #vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
-success_symbol = "[[🤞\\(¬_¬٥\\)](green) ❯](peach)"
+success_symbol = "[[🤞\\(¬_¬༠\\)](green) ❯](peach)"
 error_symbol = "[[🫵\\(♯⌣̀᷼ ⌣́\\)](red) ❯](peach)"
 vimcmd_symbol = "[💪\\(•́‿•́✧\\) ❮](subtext1)" # For use with zsh-vi-mode
 
