@@ -19,18 +19,18 @@ This repository is used to store all dot-config files for various shells and edi
 
 ## How To Use GNU Stow
 ### 1) Install GNU Stow
-```console
+```bash
 # Install Stow
 sudo apt install -y stow
 ```
 
 ### 2) Clone This Repo on a New Linux Host
-```console
+```bash
 git clone https://github.com/badaniya/.stowed $HOME/.stowed
 ```
 
 ### 3) Run Stow Command to Establish Symlinks to the Repository
-```console
+```bash
 # Create Symlinks to Repo
 stow -d $HOME/.stowed tmux fzf starship bash zsh nvim vim emacs
 
@@ -45,13 +45,13 @@ rm -rf $HOME/.bash*; rm -rf $HOME/.zsh*; rm -rf $HOME/.oh-my-zsh; rm -rf $HOME/.
 
 ## Follow-up Package Installation for Shell/Editor Tools
 ### 1) Tmux
-```console
+```bash
 # tmux: Ubuntu package version
 sudo apt install -y tmux
 ```
 
 ### 2) Zsh
-```console
+```bash
 # zsh: Ubuntu package version
 sudo apt install -y zsh
 
@@ -60,13 +60,13 @@ sudo apt install fonts-powerline
 ```
 
 ### 3) Starship
-```console
+```bash
 # starship: Shell script installer
 curl -sS https://starship.rs/install.sh | sh
 ```
 
 ### 4) Neovim
-```console
+```bash
 # neovim: Latest version
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 sudo rm -rf /opt/nvim
@@ -83,19 +83,19 @@ fc-cache -fv
 
 ### 4.1) Neovim Plugin Dependencies
 #### Database UI Plugin
-```console
+```bash
 # DB UI - postgres/mysql (vim-dadbod and vim-dadbod-ui)
 sudo apt install -y postgresql-client
 sudo apt install -y mariadb-client 
 ```
 
 ### 5) Vim
-```console
+```bash
 sudo apt install -y vim
 ```
 
 ### 6) Emacs
-```console
+```bash
 sudo apt-add-repository -y ppa:kelleyk/emacs
 sudo apt update -y
 sudo apt install -y emacs28
@@ -103,7 +103,7 @@ sudo apt install -y emacs28
 
 ## Linux Development Environment Setup
 ### 1) Golang
-```console
+```bash
 # golang:
 golang_version="1.22.1"
 wget https://go.dev/dl/go"$golang_version".linux-amd64.tar.gz
@@ -128,7 +128,7 @@ go install gotest.tools/gotestsum@latest
 ```
 
 ## How to Use These Stowed Shell/Editor Tools
-```console
+```bash
 # 1) Start a new tmux session
 tmux [new -s <session-name> [-c <start-directory>]]
 
@@ -137,7 +137,7 @@ nvim
 ```
 
 ## General Tmux Session Commands
-```console
+```bash
 # 1) List existing tmux sessions
 tmux ls
 
@@ -155,7 +155,7 @@ tmux kill-server
 ```
 
 ## Tmux Key Bindings
-```console
+```text
 # General Tmux Bindings (<C> is the Ctrl key)
 <C-b> $ : Rename the tmux session name
 <C-b> c : Creates a new tmux window
@@ -198,7 +198,7 @@ tmux kill-server
 ```
 
 ## Nvim Key Bindings
-```console
+```text
 # General Nvim Bindings
 <space> : Main leader key for all menus
 <\> : Toggle NeoTree - Directory Browser
