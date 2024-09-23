@@ -10,11 +10,11 @@ export GOMODCACHE=$GOBASEPATH/pkg/mod
 export GOROOT="/usr/local/go"
 export GOPATH=$GOBASEPATH
 
-if [[ ! "$PATH" =~ "$GOROOT/bin" ]]; then
+if [[ ! "$PATH" =~ $GOROOT/bin ]]; then
     export PATH=$GOROOT/bin:$PATH
 fi
 
-if [[ ! "$PATH" =~ "$GOBASEPATH/bin" ]]; then
+if [[ ! "$PATH" =~ $GOBASEPATH/bin ]]; then
     export PATH=$GOBASEPATH/bin:$PATH
 fi
 
@@ -27,7 +27,11 @@ export DOCKER_BUILDKIT=1
 export KUBECONFIG=~/.kube/config
 
 ## Other Environment Settings ##
-if [[ -f $HOME/.private_bash_profile ]]; then
-    source $HOME/.private_bash_profile
+if [[ -f "$HOME/.private_bash_profile" ]]; then
+    source "$HOME/.private_bash_profile"
 fi
-. "$HOME/.cargo/env"
+
+## Rust Cargo Environment Settings ##
+if [[ -f $HOME/.cargo/enf ]]; then
+    source "$HOME/.cargo/env"
+fi
