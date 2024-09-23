@@ -4,7 +4,9 @@ return {
     require('scrollview').setup {
       excluded_filetypes = { 'neo-tree' },
       current_only = true,
-      signs_on_startup = { 'cursor', 'changelist', 'diagnostic', 'quickfix', 'marks', 'conflicts', 'latestchange' },
+      -- It seems that custom specification does not work!
+      -- signs_on_startup = { 'cursor', 'changelist', 'diagnostic', 'quickfix', 'marks', 'conflicts', 'latestchange' },
+      signs_on_startup = { 'all' },
       diagnostics_severities = { vim.diagnostic.severity.WARN },
     }
   end,
