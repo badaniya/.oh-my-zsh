@@ -35,13 +35,13 @@ git fetch oh-my-zsh
 git subtree pull --prefix=zsh/.oh-my-zsh oh-my-zsh master
 
 # ZSH Plugins
-#git remote add zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting
+git remote add zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting
 git remote add zsh-syntax-highlighting-catppuccin https://github.com/catppuccin/zsh-syntax-highlighting
 git remote add zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
 git remote add last-working-dir-tmux https://github.com/badaniya/last-working-dir-tmux
 git remote add zsh-vi-mode https://github.com/jeffreytse/zsh-vi-mode
-#git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-syntax-highlighting master --squash
-git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-syntax-highlighting-catppuccin main --squash
+git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-syntax-highlighting master --squash
+git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/catppuccin zsh-syntax-highlighting-catppuccin main --squash
 git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions zsh-autosuggestions master --squash
 git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/last-working-dir-tmux last-working-dir-tmux master --squash
 git subtree add --prefix=zsh/.oh-my-zsh/custom/plugins/zsh-vi-mode zsh-vi-mode master --squash
