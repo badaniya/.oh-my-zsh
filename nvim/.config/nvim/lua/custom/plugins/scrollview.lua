@@ -5,7 +5,7 @@ return {
       excluded_filetypes = { 'neo-tree' },
       current_only = true,
       signs_on_startup = { 'cursor', 'changelist', 'diagnostic', 'quickfix', 'marks', 'conflicts', 'latestchange' },
-      diagnostics_severities = { vim.diagnostic.severity.ERROR },
+      diagnostics_severities = { vim.diagnostic.severity.WARN },
     }
   end,
 }
