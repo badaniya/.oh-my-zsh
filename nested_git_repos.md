@@ -31,13 +31,12 @@ git remote add oh-my-zsh https://github.com/badaniya/.oh-my-zsh
 git subtree add --prefix=zsh/.oh-my-zsh oh-my-zsh master
 
 # How to Pull in Oh My ZSH Updates
-# git pull -s subtree oh-my-zsh master --allow-unrelated-histories
 git fetch oh-my-zsh
 git subtree pull --prefix=zsh/.oh-my-zsh oh-my-zsh master
 
 # ZSH Plugins
 git remote add zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting
-git remote add zsh-syntax-highlighting-catppuccin https://github.com/catppuccin/zsh-syntax-highlighting
+git remote add zsh-syntax-highlighting-catppuccin https://github.com/catppuccin/zsh-syntax-highlighting/themes
 git remote add zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
 git remote add last-working-dir-tmux https://github.com/badaniya/last-working-dir-tmux
 git remote add zsh-vi-mode https://github.com/jeffreytse/zsh-vi-mode
