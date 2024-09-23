@@ -25,9 +25,21 @@ return {
           filetype = { enabled = true },
           visible = { modified = { buffer_number = false } },
           gitsigns = {
-            added = { enabled = true, icon = '+' },
-            changed = { enabled = true, icon = '~' },
-            deleted = { enabled = true, icon = '-' },
+            -- added = { enabled = true, icon = '+' },
+            -- changed = { enabled = true, icon = '~' },
+            -- deleted = { enabled = true, icon = '-' },
+            -- added = { enabled = true, icon = '↪ ' },
+            -- changed = { enabled = true, icon = '↯ ' },
+            -- deleted = { enabled = true, icon = '↩ ' },
+            -- added = { enabled = true, icon = '⊕ ' },
+            -- changed = { enabled = true, icon = '⊘ ' },
+            -- deleted = { enabled = true, icon = '⊗ ' },
+            -- added = { enabled = true, icon = '⊠ ' },
+            -- changed = { enabled = true, icon = '⊟ ' },
+            -- deleted = { enabled = true, icon = '⊞ ' },
+            added = { enabled = true, icon = '▣ ' },
+            changed = { enabled = true, icon = '▨ ' },
+            deleted = { enabled = true, icon = '▢ ' },
           },
           modified = { button = '●' },
           pinned = { button = '', filename = true },
@@ -89,6 +101,7 @@ return {
       --                 :BufferCloseAllButCurrent
       --                 :BufferCloseAllButPinned
       --                 :BufferCloseAllButCurrentOrPinned
+      map('n', '<A-x>', '<Cmd>BufferCloseAllButCurrentOrPinned<CR>', opts)
       --                 :BufferCloseBuffersLeft
       --                 :BufferCloseBuffersRight
       -- Magic buffer-picking mode

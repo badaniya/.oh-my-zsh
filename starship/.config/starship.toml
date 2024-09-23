@@ -25,7 +25,7 @@ format = "$directory$fill$all"
 #vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
 success_symbol = "[[🤞\\(¬_¬٥\\)](green) ❯](peach)"
 error_symbol = "[[🫵\\(♯⌣̀᷼ ⌣́\\)](red) ❯](peach)"
-vimcmd_symbol = "[💪\\(•́‿•́✧\\) ❮](subtext1)" # For use with zsh-vi-mode
+vimcmd_symbol = "[💪\\(•́‿•́✧\\) ❮](subtext1)"      # For use with zsh-vi-mode
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)](bold mauve) '
@@ -74,4 +74,3 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
-
